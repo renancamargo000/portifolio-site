@@ -1,0 +1,326 @@
+:root {
+  --cor-fundo: #ffffff4a;
+  --cor-fundo-secundaria: #38bff826;
+  --cor-texto: #000000;
+  --cor-texto-suave: #006aff;
+  --cor-primaria: #38bff8;
+}
+
+*{
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+body{
+  background-color: var(--cor-fundo);
+  margin: 0;
+}
+
+
+
+header>nav{
+  display: flex;
+  justify-content: space-evenly;
+  background-color: var(--cor-primaria);
+  position: fixed;
+  width: 100%;
+  
+  
+}
+
+header>nav>div{
+  display: flex;
+  background-color: var(--cor-primaria);
+  padding: 10px;
+}
+
+header>nav>div>a{
+  text-decoration: none;
+  display: block;
+  color: var(--cor-texto);
+}
+
+header>nav>div:hover{
+  background-color :#29a4d883;
+  cursor: pointer;
+  
+}
+
+
+
+
+.home{
+  color: var(--cor-texto-suave);
+  background-color: var(--cor-fundo);
+  text-align: center;
+  padding: 20px;
+  width: 80%;
+  margin: 0 auto;
+
+}
+
+.imagem-perfil>img{
+  border: 2px solid rgb(0, 34, 255); 
+  border-radius: 50px;  
+}
+  
+
+.quem-sou-eu{
+  color: var(--cor-texto);
+  text-align: center;
+  font-family: Arial, Helvetica, sans-serif;
+  line-height: 10px;
+  line-height: bold;
+}
+
+.apresentacao{
+  color: var(--cor-texto);
+  font-family: Arial, Helvetica, sans-serif;
+  line-height: 20px;
+  
+
+}
+
+.container-sobre{
+  color: var(--cor-texto);
+  text-align: center;
+  width: 100%;
+  margin: 0 auto;
+  padding: 20px;
+  border-radius: 2px;
+  background-color: var(--cor-fundo-secundaria);
+}
+
+.skills{
+  color: var(--cor-texto);
+  text-align: center;
+  padding: 20px;
+}
+
+.skill-js{
+  margin-bottom: 20px;
+}
+
+.container-skills{
+  color: var(--cor-texto-suave);
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+
+  
+}
+
+
+
+.projetos-section{
+  background-color: white;
+  display: grid;
+  grid-template-columns: auto auto auto auto;
+  gap: 20px;
+  padding: 10px;
+  padding-left: 0px;
+  overflow-x: auto;
+}
+
+.projetos{
+  color: var(--cor-texto-suave);
+  font-family: Arial, Helvetica, sans-serif;
+  text-align: center;
+
+}
+
+.aba{
+  background-color: #006aff;
+  width: 10px;
+
+}
+
+
+
+
+
+
+
+.container-projetos{
+  display: flex;
+  flex-direction: row;
+  gap: 20px;
+  background-color: rgba(35, 35, 35, 0.107);
+  width: 450px;
+  border-top-right-radius: 20px ;
+  border-bottom-right-radius: 20px;
+}
+
+
+.container-projetos:hover .aba{
+  width: 30px;
+  transition-duration: 1.2s;
+
+}
+.conteudo-projeto{
+  padding: 5px;
+  
+}
+
+.conteudo-projeto>img{
+  border-radius: 10px;
+  margin-top: 5px;
+  
+}
+
+.conteudo-projeto>.ano-projeto>p{
+ margin: 0;
+ line-height: 25px;
+  
+}
+
+
+
+
+footer{
+  color: var(--cor-texto);
+  background-color: var(--cor-fundo-secundaria);
+  text-align: center;
+  padding: 20px;
+  margin-top: 20px;
+  min-height: auto;
+  margin: 0;
+  padding: 4px 0;
+}
+
+footer>div>h1{
+  margin: 0;
+  padding: 0;
+}
+
+.container-contato{
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+ padding: 4px 0;
+ margin: 0;
+ font-size: 5px;
+}
+
+.foto-telefone{
+  width: 50px;
+
+}
+
+
+.container-telefone{
+  display: flex;
+  font-size: 10px;
+  gap: 20px;
+
+}
+
+.foto-email{
+  width: 50px;
+}
+
+.container-email{
+  display: flex;
+  gap: 20px;
+  font-size: 10px;
+}
+
+
+
+
+.certificacoes{
+  color: var(--cor-texto);
+  text-align: center;
+  background-color: #efefef0f;
+  padding: 10px;
+}
+
+
+.certificacoes-section{
+  display: grid;
+  grid-template-columns: repeat(4, 1fr)
+
+}
+
+.aba-certificacoes{
+  width: 10px;
+  background-color: blueviolet;
+}
+
+.container-certificacoes{
+  display: flex;
+  gap: 20px;
+  background-color: rgba(0, 0, 0, 0.172);
+  padding-left: 0;
+  border-radius: 0px;
+  border-top-left-radius: 0px ;
+}
+
+.conteudo-certificacoes{
+  padding: 20px;
+  line-height: 15px;
+}
+
+.conteudo-certificacoes>img{
+  border-radius: 10px;
+}
+
+
+@media (max-width: 768px) {
+
+
+  footer{
+  color: var(--cor-texto);
+  background-color: var(--cor-fundo-secundaria);
+  text-align: center;
+  padding: 20px;
+  margin-top: 20px;
+  min-height: auto;
+  margin: 0;
+  padding: 4px 0;
+}
+
+footer>div>h1{
+  margin: 0;
+  padding: 0;
+}
+
+.container-contato{
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  gap: 5px;
+ padding: 4px 0;
+ margin: 0;
+ font-size: 5px;
+}
+
+.foto-telefone{
+  width: 50px;
+
+}
+
+
+.container-telefone{
+  display: flex;
+  justify-content: center;
+  font-size: 10px;
+  gap: 20px;
+
+}
+
+.foto-email{
+  width: 50px;
+}
+
+.container-email{
+  display: flex;
+  gap: 20px;
+  font-size: 10px;
+  margin: 0;
+  padding: 4px 0;
+  justify-content: center;
+}
+ 
+}
+ 
+
